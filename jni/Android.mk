@@ -1,4 +1,4 @@
-ifneq (,$(filter $(QCOM_BOARD_PLATFORMS),$(TARGET_BOARD_PLATFORM)))
+ifeq ($(BOARD_HAVE_QCOM_FM),true)
 LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
